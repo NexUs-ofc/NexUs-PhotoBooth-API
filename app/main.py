@@ -1,6 +1,9 @@
 """Aplicação FastAPI independente do PhotoBooth."""
 
+from dotenv import load_dotenv
 from fastapi import FastAPI
+
+load_dotenv()
 
 from app.routes.photobooth import router as photobooth_router
 
